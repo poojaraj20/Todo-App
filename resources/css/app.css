@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom styles for the dashboard */
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Restrict container width */
+    margin: auto;     /* Center container */
+    padding: 1rem;    /* Add padding */
+}
+
+/* Heading styles */
+h2 {
+    font-size: 1.5rem; /* Larger font for section headings */
+    margin-bottom: 0.5rem; /* Space below headings */
+    color: #4a5568; /* Dark gray color */
+}
+
+h3 {
+    font-size: 1.25rem; /* Font size for project titles */
+    margin-top: 0.5rem; /* Space above project titles */
+    color: #2d3748; /* Slightly darker gray */
+}
+
+h4 {
+    font-size: 1rem; /* Font size for todos section */
+    margin-top: 1rem; /* Space above todos section */
+    color: #2c5282; /* Dark blue color */
+}
+
+/* Button styles */
+button {
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for button hover */
+}
+
+/* Button hover effects */
+button:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Alert message styles */
+.alert {
+    padding: 1rem; /* Add padding to alerts */
+    background-color: #f0f9ff; /* Light blue background for success messages */
+    color: #1e3a8a; /* Dark blue text color */
+    border-radius: 0.5rem; /* Rounded corners */
+    margin-bottom: 1rem; /* Space below alerts */
+}
+
+/* Input styles */
+input[type="text"] {
+    border: 1px solid #e5e7eb; /* Light gray border */
+    border-radius: 0.25rem; /* Rounded corners */
+    padding: 0.5rem; /* Padding for inputs */
+    width: calc(100% - 1rem); /* Full width minus padding */
+    margin-right: 0.5rem; /* Space between input and button */
+}
+
+/* List styles */
+ul {
+    padding-left: 1.5rem; /* Indent the list */
+}
+
+/* Flexbox styles for todo items */
+.flex {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+/* Additional button styles for delete and update */
+.bg-red-500 {
+    background-color: #f56565; /* Red for delete button */
+}
+
+.bg-green-500 {
+    background-color: #48bb78; /* Green for add button */
+}
+
+.bg-yellow-500 {
+    background-color: #ecc94b; /* Yellow for update button */
+}
+
+/* Rounded button styles */
+button {
+    border-radius: 0.375rem; /* Consistent rounded corners */
+    padding: 0.5rem 1rem; /* Padding for buttons */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
